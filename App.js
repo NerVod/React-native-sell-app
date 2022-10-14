@@ -1,26 +1,28 @@
 import { StatusBar } from 'expo-status-bar';
-import { View } from 'react-native';
+import { View, StyleSheet, Text } from 'react-native';
 import ViewImageScreen from './app/screens/ViewImageScreen';
 import WelcomeScreen from './app/screens/WelcomeScreen';
+import {MaterialCommunityIcons} from '@expo/vector-icons'
+
+import AppText from './app/components/AppText';
+import AppButton from './app/components/AppButton';
 
 
 
 export default function App() {
 
   return (
-  //  <WelcomeScreen />
-  <ViewImageScreen />
+<WelcomeScreen />
   );
 }
 
 
 
-// const styles = StyleSheet.create({
-//   container: {
-//     flex: 1,
-//     backgroundColor: '#fff',
-//     // alignItems: 'center',
-//     // justifyContent: 'center',
-//     paddingTop: Platform.OS === 'android' ? StatusBar.currentHeight :0
-//   },
-// });
+const styles = StyleSheet.create({
+  container: {
+    // flex: 1,
+    // alignItems: 'center',
+    // justifyContent: 'center',
+    // paddingTop: Platform.OS === 'android' ? StatusBar.currentHeight :0
+  },
+});

@@ -3,10 +3,10 @@ import { StyleSheet, Text, TouchableOpacity } from 'react-native';
 
 import colors from "../config/color"
 
-function AppButton({ title, onPress }) {
+function AppButton({ title, onPress, color = "primary" }) {
     return (
         <TouchableOpacity 
-        style={styles.button}
+        style={[styles.button , {backgroundColor: colors[color]}]}
         onPress={onPress}
         >
             <Text style={styles.text}>{title}</Text>
@@ -22,7 +22,8 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         padding: 25,
-        width: '100%'
+        width: '100%',
+        marginVertical: 10
     },
     text: {
         color: colors.white,
