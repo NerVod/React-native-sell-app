@@ -6,22 +6,11 @@ import { MaterialCommunityIcons } from "@expo/vector-icons";
 import AppCard from "./app/components/AppCard";
 import AppText from "./app/components/AppText";
 import AppButton from "./app/components/AppButton";
+import ListingDetailsScreen from "./app/screens/ListingDetailsScreen";
 
 export default function App() {
   return (
-    <View
-      style={{
-        backgroundColor: "f8f4f4",
-        padding: 20,
-        paddingTop: 100,
-      }}
-    >
-      <AppCard
-        title="Red Jacket for sale"
-        subTitle="$100"
-        image={require("./app/assets/jacket.jpg")}
-      ></AppCard>
-    </View>
+    <ListingDetailsScreen />
   );
 }
 
