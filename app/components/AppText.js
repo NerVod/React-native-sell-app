@@ -1,5 +1,6 @@
 import React from 'react';
 import { Platform, StyleSheet, Text } from 'react-native';
+import color from '../config/color';
 
 function AppText({ children, style }) {
     return (
@@ -13,7 +14,7 @@ function AppText({ children, style }) {
 
 const styles = StyleSheet.create({
     text: {
-        color: "tomato",
+        color: color.black,
         ...Platform.select({
             ios: {
                 fontSize: 20,

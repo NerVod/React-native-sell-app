@@ -3,7 +3,6 @@ import { StyleSheet, View, Image } from 'react-native';
 
 import AppText from './AppText';
 import color from '../config/color';
-import { Colors } from 'react-native/Libraries/NewAppScreen';
 
 function AppCard({ title , subTitle, image}) {
     return (

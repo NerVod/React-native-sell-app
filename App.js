@@ -8,6 +8,7 @@ import AppText from "./app/components/AppText";
 import AppButton from "./app/components/AppButton";
 import ListingDetailsScreen from "./app/screens/ListingDetailsScreen";
 
+
 export default function App() {
   return (
     <ListingDetailsScreen />
