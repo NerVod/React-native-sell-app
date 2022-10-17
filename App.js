@@ -7,11 +7,12 @@ import AppCard from "./app/components/AppCard";
 import AppText from "./app/components/AppText";
 import AppButton from "./app/components/AppButton";
 import ListingDetailsScreen from "./app/screens/ListingDetailsScreen";
+import MessagesScreen from "./app/screens/MessagesScreen";
 
 
 export default function App() {
   return (
-    <ViewImageScreen />
+    <MessagesScreen />
   );
 }
 
